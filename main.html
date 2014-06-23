@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>D3 Styleguide</title>
+  <meta name="description" content="D3js Styleguide">
+  <meta name="author" content="Forrest Slater">
+</head>
+
+<body style="display: none">
+  
+  <div id="bar-chart"></div>
+  <div id="msl-chart"></div>
+  <div id="scatter"></div>
+  
+  <script src="/charts/bar.js"></script>  <!-- bar chart -->
+  <script src="/charts/multi-series-line.js"></script>  <!-- multi-series-line chart -->
+  <script src="/charts/scatter.js"></script>  <!-- scatter chart -->
+  <script src="/charts/chart-constructor.js"></script>  <!-- chart constructor -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>  <!-- JQUERY -->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>  <!-- D3 -->
+  <script type="text/javascript">
+    $('body').show();
+    
+    var drawCharts = function() {
+  
+      // for(var i=0; i<5; i++) {
+      //
+      //   var type = "msl";
+      //   $('#reporting .charts').append("<div class='chart show-chart-lightbox "+CHART_NUMS[i]+"' data-charttype='"+type+"' data-charttitle='"+CHART_TITLES[i]+"' data-chartdata='"+JSON.stringify(CHARTS_LIST[i])+"'></div>");
+      //
+      //   var selector = '#reporting .charts .chart.'+CHART_NUMS[i];
+      //   var chart = new Chart(type, selector, CHARTS_LIST[i], CHART_TITLES[i], CHART_WIDTH, CHART_HEIGHT, CHART_MARGINS, CHART_COLORS, "Hours");
+      //   chart.drawMSL();
+      // }
+      //
+    }
+
+    $(function(){
+      drawCharts();
+    })
+           
+  </script>
+</body>
+</html>
